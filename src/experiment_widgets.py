@@ -8,26 +8,26 @@ participant_input = widgets.Text(
     value='',
     placeholder='Enter participant ID',
     description='Participant:',
-    layout=widgets.Layout(width='250px')  # Wider input for Participant
+    layout=widgets.Layout(width='250px')
 )
 
 experimenter_input = widgets.Text(
     value='',
     placeholder="Enter scientist's name",
     description='Scientist:',
-    layout=widgets.Layout(width='250px')  # Wider input for Experimenter
+    layout=widgets.Layout(width='250px')
 )
 
 # Number of phases input
 phases_input = widgets.IntText(
     value=1,
     description='Phases:',
-    layout=widgets.Layout(width='140px')  # Wider label for Number of Phases
+    layout=widgets.Layout(width='140px')
 )
 
 # Layout adjustments
-label_layout = widgets.Layout(width='155px')  # Wider labels for longer descriptions
-input_box_layout = widgets.Layout(width='90px')  # Halved input box width
+label_layout = widgets.Layout(width='155px')
+input_box_layout = widgets.Layout(width='90px')
 
 # Function to create a horizontal separator
 def horizontal_separator():
@@ -35,11 +35,19 @@ def horizontal_separator():
 
 # Function to dynamically create widgets for each phase
 def create_phase_widgets(phase_num):
+    # Duration widget
     duration_widget = HBox([
         widgets.Label(value=f'Duration (Phase {phase_num}):', layout=widgets.Layout(width='155px')),
         widgets.IntText(value=30, layout=input_box_layout)
     ])
-    
+
+    # Background color widget (NEW: moved to top after duration)
+    background_color_widget = HBox([
+        widgets.Label(value=f'Background Color (Phase {phase_num}):', layout=widgets.Layout(width='155px')),
+        widgets.ColorPicker(value="#000000", layout=input_box_layout)
+    ])
+
+    # Number of balls widget
     number_balls_widget = HBox([
         widgets.Label(value=f'Number of Balls (Phase {phase_num}):', layout=widgets.Layout(width='155px')),
         widgets.IntText(value=3, layout=input_box_layout)
@@ -49,6 +57,7 @@ def create_phase_widgets(phase_num):
     def update_ball_settings(change):
         num_balls = number_balls_widget.children[1].value
         
+        # Update all ball-specific widgets
         speed_widgets.children = [
             HBox([
                 widgets.Label(value=f'Speed (Ball {i + 1}):', layout=label_layout),
@@ -61,7 +70,12 @@ def create_phase_widgets(phase_num):
                 widgets.FloatText(value=60, layout=input_box_layout)
             ]) for i in range(num_balls)
         ]
-        
+        base_colors_widgets.children = [
+            HBox([
+                widgets.Label(value=f'Base Color (Ball {i + 1}):', layout=label_layout),
+                widgets.ColorPicker(value="#ff0000", layout=input_box_layout)
+            ]) for i in range(num_balls)
+        ]
         points_per_reinforcement.children = [
             HBox([
                 widgets.Label(value=f'Points (Ball {i + 1}):', layout=label_layout),
@@ -80,24 +94,17 @@ def create_phase_widgets(phase_num):
                 widgets.FloatText(value=5, layout=input_box_layout)
             ]) for i in range(num_balls)
         ]
-        
-        # Color Pickers for each ball
-        base_colors_widgets.children = [
-            HBox([
-                widgets.Label(value=f'Base Color (Ball {i + 1}):', layout=label_layout),
-                widgets.ColorPicker(value="#ff0000", layout=input_box_layout)
-            ]) for i in range(num_balls)
-        ]
 
+    # Observe changes to number of balls
     number_balls_widget.children[1].observe(update_ball_settings, names='value')
 
     # Containers for the ball-specific widgets
     speed_widgets = HBox([])
     radii_widgets = HBox([])
+    base_colors_widgets = HBox([])
     points_per_reinforcement = HBox([])
     change_to_clicks_widgets = HBox([])
     change_over_delay_widgets = HBox([])
-    base_colors_widgets = HBox([])
 
     # Initial update for ball-specific widgets
     update_ball_settings(None)
@@ -114,19 +121,20 @@ def create_phase_widgets(phase_num):
         widgets.Dropdown(options=[('False', False), ('True', True)], value=False, layout=input_box_layout)
     ])
 
-    # Assemble phase-specific widgets
+    # Assemble phase-specific widgets (NEW: background color is now 2nd child)
     phase_box = VBox([
-        duration_widget, 
+        duration_widget,
+        background_color_widget,
         number_balls_widget,
-        speed_widgets, 
+        speed_widgets,
         radii_widgets,
         base_colors_widgets,
-        points_per_reinforcement, 
-        change_to_clicks_widgets, 
+        points_per_reinforcement,
+        change_to_clicks_widgets,
         change_over_delay_widgets,
-        yoked_widget,  # Add the Yoked dropdown
-        debug_widget,  # Add the Debug dropdown
-        horizontal_separator()  # Add horizontal separator after each phase
+        yoked_widget,
+        debug_widget,
+        horizontal_separator()
     ])
 
     return phase_box
@@ -139,27 +147,31 @@ def update_phases(change):
 # Save settings to a JSON file
 def save_settings(button):
     settings = {
+        'participant': participant_input.value,
+        'experimenter': experimenter_input.value,
         'phases': phases_input.value,
         'phase_data': []
     }
 
     for phase_num in range(phases_input.value):
+        phase_widget = phase_boxes.children[phase_num]
         phase_info = {
-            'duration': phase_boxes.children[phase_num].children[0].children[1].value,
-            'number_of_balls': phase_boxes.children[phase_num].children[1].children[1].value,
-            'yoked': phase_boxes.children[phase_num].children[-3].children[1].value,
-            'debug': phase_boxes.children[phase_num].children[-2].children[1].value,
+            'duration': phase_widget.children[0].children[1].value,
+            'background_color': phase_widget.children[1].children[1].value,  # NEW: added background color
+            'number_of_balls': phase_widget.children[2].children[1].value,
+            'yoked': phase_widget.children[-3].children[1].value,
+            'debug': phase_widget.children[-2].children[1].value,
             'balls': []
         }
         
         for ball_num in range(phase_info['number_of_balls']):
             ball_info = {
-                'speed': phase_boxes.children[phase_num].children[2].children[ball_num].children[1].value,
-                'radius': phase_boxes.children[phase_num].children[3].children[ball_num].children[1].value,
-                'points_per_reinforcement': phase_boxes.children[phase_num].children[5].children[ball_num].children[1].value,
-                'change_to_clicks': phase_boxes.children[phase_num].children[6].children[ball_num].children[1].value,
-                'change_over_delay': phase_boxes.children[phase_num].children[7].children[ball_num].children[1].value,
-                'base_color': phase_boxes.children[phase_num].children[4].children[ball_num].children[1].value  # Base color picker
+                'speed': phase_widget.children[3].children[ball_num].children[1].value,
+                'radius': phase_widget.children[4].children[ball_num].children[1].value,
+                'base_color': phase_widget.children[5].children[ball_num].children[1].value,
+                'points_per_reinforcement': phase_widget.children[6].children[ball_num].children[1].value,
+                'change_to_clicks': phase_widget.children[7].children[ball_num].children[1].value,
+                'change_over_delay': phase_widget.children[8].children[ball_num].children[1].value
             }
             phase_info['balls'].append(ball_info)
         
@@ -167,6 +179,7 @@ def save_settings(button):
 
     with open('settings.json', 'w') as f:
         json.dump(settings, f)
+    print("Settings saved to settings.json")
 
 # Load settings from a JSON file
 def load_settings(button):
@@ -174,32 +187,42 @@ def load_settings(button):
         with open('settings.json', 'r') as f:
             settings = json.load(f)
         
+        participant_input.value = settings.get('participant', '')
+        experimenter_input.value = settings.get('experimenter', '')
         phases_input.value = settings['phases']
         
         # Update phase boxes based on loaded data
         phase_boxes.children = []
         for phase in settings['phase_data']:
             phase_widget = create_phase_widgets(len(phase_boxes.children) + 1)
+            
+            # Set phase-level values
             phase_widget.children[0].children[1].value = phase['duration']
-            phase_widget.children[1].children[1].value = phase['number_of_balls']
+            phase_widget.children[1].children[1].value = phase.get('background_color', '#000000')  # NEW: load background color
+            phase_widget.children[2].children[1].value = phase['number_of_balls']
             phase_widget.children[-3].children[1].value = phase['yoked']
             phase_widget.children[-2].children[1].value = phase['debug']
             
+            # Set ball-specific values
             for ball_num in range(phase['number_of_balls']):
-                phase_widget.children[2].children[ball_num].children[1].value = phase['balls'][ball_num]['speed']
-                phase_widget.children[3].children[ball_num].children[1].value = phase['balls'][ball_num]['radius']
-                phase_widget.children[5].children[ball_num].children[1].value = phase['balls'][ball_num]['points_per_reinforcement']
-                phase_widget.children[6].children[ball_num].children[1].value = phase['balls'][ball_num]['change_to_clicks']
-                phase_widget.children[7].children[ball_num].children[1].value = phase['balls'][ball_num]['change_over_delay']
-                phase_widget.children[4].children[ball_num].children[1].value = phase['balls'][ball_num]['base_color']
+                phase_widget.children[3].children[ball_num].children[1].value = phase['balls'][ball_num]['speed']
+                phase_widget.children[4].children[ball_num].children[1].value = phase['balls'][ball_num]['radius']
+                phase_widget.children[5].children[ball_num].children[1].value = phase['balls'][ball_num]['base_color']
+                phase_widget.children[6].children[ball_num].children[1].value = phase['balls'][ball_num]['points_per_reinforcement']
+                phase_widget.children[7].children[ball_num].children[1].value = phase['balls'][ball_num]['change_to_clicks']
+                phase_widget.children[8].children[ball_num].children[1].value = phase['balls'][ball_num]['change_over_delay']
             
             phase_boxes.children += (phase_widget,)
+        
+        print("Settings loaded from settings.json")
 
     except FileNotFoundError:
         print("No settings file found. Please save settings first.")
+    except Exception as e:
+        print(f"Error loading settings: {e}")
 
 # Main interface
-phase_boxes = VBox([create_phase_widgets(1)])  # Start with one phase
+phase_boxes = VBox([create_phase_widgets(1)])
 phases_input.observe(update_phases, names='value')
 
 # Save and Load Buttons
@@ -216,5 +239,5 @@ display(VBox([
     phases_input,
     horizontal_separator(),
     phase_boxes,
-    HBox([save_button, load_button])  # Buttons in a horizontal box
+    HBox([save_button, load_button])
 ]))
