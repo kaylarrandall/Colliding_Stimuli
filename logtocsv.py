@@ -6,7 +6,7 @@ from datetime import datetime
 subdirectory = "experiment_data"
 appendcount = 0
 
-def write_data(data):
+def write_data(*, data):
     # Append to the text file
     with open(csv_filepath, 'a', newline='', encoding='utf-8') as textfile:
         # print("Clicked in empty location:",event.pos[0], event.pos[1], file=f) 

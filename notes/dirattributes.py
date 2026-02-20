@@ -1,6 +1,6 @@
 import os
 
-def print_directory_structure(rootdir):
+def print_directory_structure(*, rootdir):
     for foldername, subfolders, filenames in os.walk(rootdir):
         print(f'[{foldername}]')
         for subfolder in subfolders:
@@ -12,4 +12,4 @@ def print_directory_structure(rootdir):
 current_directory = os.getcwd()
 
 # Print the directory structure for the current directory
-print_directory_structure(current_directory)
+print_directory_structure(rootdir=current_directory)
