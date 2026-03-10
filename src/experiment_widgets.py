@@ -18,13 +18,6 @@ experimenter_input = widgets.Text(
     layout=widgets.Layout(width='250px')
 )
 
-# Global top-screen instructions (appear at the top during the entire experiment)
-top_instructions = widgets.Textarea(
-    value='',
-    placeholder='Enter instructions to appear at the top of the experiment',
-    description='Top Instructions:',
-    layout=widgets.Layout(width='600px', height='80px')
-)
 
 # Number of phases input
 phases_input = widgets.IntText(
@@ -171,7 +164,6 @@ def save_settings(*, button):
     settings = {
         'participant': participant_input.value,
         'experimenter': experimenter_input.value,
-        'top_instructions': top_instructions.value,
         'phases': phases_input.value,
         'phase_data': []
     }
@@ -214,7 +206,6 @@ def load_settings(*, button):
         
         participant_input.value = settings.get('participant', '')
         experimenter_input.value = settings.get('experimenter', '')
-        top_instructions.value = settings.get('top_instructions', '')
         phases_input.value = settings['phases']
         
         # Update phase boxes based on loaded data
