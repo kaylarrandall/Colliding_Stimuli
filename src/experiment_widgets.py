@@ -66,7 +66,7 @@ def create_phase_widgets(*, phase_num):
 
     free_contingency_widget = HBox([
         widgets.Label(value=f'Optional Free Contingency:', layout=widgets.Layout(width='155px')),
-        widgets.Textarea(value='', placeholder='Optional Free Contingency Code to be executed each loop', layout=widgets.Layout(width='400px', height='80px'))
+        widgets.Textarea(value='', placeholder='Optional Free Contingency Code to be executed each loop.  Must write code in other editor and paste in here if using the /tab button, as tab in here will advance to next widget.', layout=widgets.Layout(width='400px', height='80px'))
     ])
 
     # Number of balls widget
