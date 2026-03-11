@@ -42,15 +42,36 @@ def create_phase_widgets(*, phase_num):
         widgets.IntText(value=30, layout=input_box_layout)
     ])
 
+    skip_phase_if_widget = HBox([
+        widgets.Label(value=f'Skip Phase If:', layout=widgets.Layout(width='155px')),
+        widgets.Textarea(value='', placeholder='Optional: Code to be evaluated to see if we skip the phase', layout=widgets.Layout(width='400px', height='80px'))
+    ])
+
     # Background color widget (NEW: moved to top after duration)
     background_color_widget = HBox([
-        widgets.Label(value=f'Background Color (Phase {phase_num}):', layout=widgets.Layout(width='155px')),
+        widgets.Label(value=f'Background Color:', layout=widgets.Layout(width='155px')),
         widgets.ColorPicker(value="#000000", layout=input_box_layout)
+    ])
+    # Before-phase instructions (displayed centered before the phase starts)
+    before_instructions_widget = HBox([
+        widgets.Label(value=f'Before Phase Instructions:', layout=widgets.Layout(width='155px')),
+        widgets.Textarea(value='', placeholder='Instructions shown before this phase (auto-wrapped)', layout=widgets.Layout(width='400px', height='80px'))
+    ])
+
+    # During-phase instructions (displayed at the top during the phase)
+    during_instructions_widget = HBox([
+        widgets.Label(value=f'During Phase Instructions:', layout=widgets.Layout(width='155px')),
+        widgets.Textarea(value='', placeholder='Instructions shown during this phase (auto-wrapped)', layout=widgets.Layout(width='400px', height='80px'))
+    ])
+
+    free_contingency_widget = HBox([
+        widgets.Label(value=f'Optional Free Contingency:', layout=widgets.Layout(width='155px')),
+        widgets.Textarea(value='', placeholder='Optional Free Contingency Code to be executed each loop', layout=widgets.Layout(width='400px', height='80px'))
     ])
 
     # Number of balls widget
     number_balls_widget = HBox([
-        widgets.Label(value=f'Number of Balls (Phase {phase_num}):', layout=widgets.Layout(width='155px')),
+        widgets.Label(value=f'Number of Balls:', layout=widgets.Layout(width='155px')),
         widgets.IntText(value=3, layout=input_box_layout)
     ])
 
@@ -110,36 +131,27 @@ def create_phase_widgets(*, phase_num):
     # Initial update for ball-specific widgets
     update_ball_settings(change=None)
 
-    # Yoked dropdown
-    yoked_widget = HBox([
-        widgets.Label(value=f'Yoked (Phase {phase_num}):', layout=widgets.Layout(width='155px')),
-        widgets.Dropdown(options=[('False', False), ('True', True)], value=False, layout=input_box_layout)
-    ])
+    # # Yoked dropdown
+    # yoked_widget = HBox([
+    #     widgets.Label(value=f'Yoked (Phase {phase_num}):', layout=widgets.Layout(width='155px')),
+    #     widgets.Dropdown(options=[('False', False), ('True', True)], value=False, layout=input_box_layout)
+    # ])
 
-    # Debug dropdown
+    # # Debug dropdown
     debug_widget = HBox([
         widgets.Label(value=f'Debug (Phase {phase_num}):', layout=widgets.Layout(width='155px')),
         widgets.Dropdown(options=[('False', False), ('True', True)], value=False, layout=input_box_layout)
     ])
 
-    # Before-phase instructions (displayed centered before the phase starts)
-    before_instructions_widget = HBox([
-        widgets.Label(value=f'Before Phase Instructions (Phase {phase_num}):', layout=widgets.Layout(width='155px')),
-        widgets.Textarea(value='', placeholder='Instructions shown before this phase (auto-wrapped)', layout=widgets.Layout(width='400px', height='80px'))
-    ])
-
-    # During-phase instructions (displayed at the top during the phase)
-    during_instructions_widget = HBox([
-        widgets.Label(value=f'During Phase Instructions (Phase {phase_num}):', layout=widgets.Layout(width='155px')),
-        widgets.Textarea(value='', placeholder='Instructions shown during this phase (auto-wrapped)', layout=widgets.Layout(width='400px', height='80px'))
-    ])
 
     # Assemble phase-specific widgets (NEW: background color is now 2nd child)
     phase_box = VBox([
         duration_widget,
+        skip_phase_if_widget,
         background_color_widget,
         before_instructions_widget,
         during_instructions_widget,
+        free_contingency_widget,
         number_balls_widget,
         speed_widgets,
         radii_widgets,
@@ -147,7 +159,7 @@ def create_phase_widgets(*, phase_num):
         points_per_reinforcement,
         change_to_clicks_widgets,
         change_over_delay_widgets,
-        yoked_widget,
+        # yoked_widget,
         debug_widget,
         horizontal_separator()
     ])
@@ -172,23 +184,25 @@ def save_settings(*, button):
         phase_widget = phase_boxes.children[phase_num]
         phase_info = {
             'duration': phase_widget.children[0].children[1].value,
-            'background_color': phase_widget.children[1].children[1].value,  # NEW: added background color
-            'before_instructions': phase_widget.children[2].children[1].value,
-            'during_instructions': phase_widget.children[3].children[1].value,
-            'number_of_balls': phase_widget.children[4].children[1].value,
-            'yoked': phase_widget.children[-3].children[1].value,
+            'skip_if': phase_widget.children[1].children[1].value,
+            'background_color': phase_widget.children[2].children[1].value,  # NEW: added background color
+            'before_instructions': phase_widget.children[3].children[1].value,
+            'during_instructions': phase_widget.children[4].children[1].value,
+            'free_contingency':phase_widget.children[5].children[1].value,
+            'number_of_balls': phase_widget.children[6].children[1].value,
+            # 'yoked': phase_widget.children[-3].children[1].value,
             'debug': phase_widget.children[-2].children[1].value,
             'balls': []
         }
         
         for ball_num in range(phase_info['number_of_balls']):
             ball_info = {
-                'speed': phase_widget.children[5].children[ball_num].children[1].value,
-                'radius': phase_widget.children[6].children[ball_num].children[1].value,
-                'base_color': phase_widget.children[7].children[ball_num].children[1].value,
-                'points_per_reinforcement': phase_widget.children[8].children[ball_num].children[1].value,
-                'change_to_clicks': phase_widget.children[9].children[ball_num].children[1].value,
-                'change_over_delay': phase_widget.children[10].children[ball_num].children[1].value
+                'speed': phase_widget.children[7].children[ball_num].children[1].value,
+                'radius': phase_widget.children[8].children[ball_num].children[1].value,
+                'base_color': phase_widget.children[9].children[ball_num].children[1].value,
+                'points_per_reinforcement': phase_widget.children[10].children[ball_num].children[1].value,
+                'change_to_clicks': phase_widget.children[11].children[ball_num].children[1].value,
+                'change_over_delay': phase_widget.children[12].children[ball_num].children[1].value
             }
             phase_info['balls'].append(ball_info)
         
@@ -215,21 +229,23 @@ def load_settings(*, button):
             
             # Set phase-level values
             phase_widget.children[0].children[1].value = phase['duration']
-            phase_widget.children[1].children[1].value = phase.get('background_color', '#000000')  # NEW: load background color
-            phase_widget.children[2].children[1].value = phase.get('before_instructions', '')
-            phase_widget.children[3].children[1].value = phase.get('during_instructions', '')
-            phase_widget.children[4].children[1].value = phase['number_of_balls']
-            phase_widget.children[-3].children[1].value = phase['yoked']
+            phase_widget.children[1].children[1].value = phase['skip_if']
+            phase_widget.children[2].children[1].value = phase.get('background_color', '#000000')  # NEW: load background color
+            phase_widget.children[3].children[1].value = phase.get('before_instructions', '')
+            phase_widget.children[4].children[1].value = phase.get('during_instructions', '')
+            phase_widget.children[5].children[1].value = phase['free_contingency']
+            phase_widget.children[6].children[1].value = phase['number_of_balls']
+            # phase_widget.children[-3].children[1].value = phase['yoked']
             phase_widget.children[-2].children[1].value = phase['debug']
             
             # Set ball-specific values
             for ball_num in range(phase['number_of_balls']):
-                phase_widget.children[5].children[ball_num].children[1].value = phase['balls'][ball_num]['speed']
-                phase_widget.children[6].children[ball_num].children[1].value = phase['balls'][ball_num]['radius']
-                phase_widget.children[7].children[ball_num].children[1].value = phase['balls'][ball_num]['base_color']
-                phase_widget.children[8].children[ball_num].children[1].value = phase['balls'][ball_num]['points_per_reinforcement']
-                phase_widget.children[9].children[ball_num].children[1].value = phase['balls'][ball_num]['change_to_clicks']
-                phase_widget.children[10].children[ball_num].children[1].value = phase['balls'][ball_num]['change_over_delay']
+                phase_widget.children[7].children[ball_num].children[1].value = phase['balls'][ball_num]['speed']
+                phase_widget.children[8].children[ball_num].children[1].value = phase['balls'][ball_num]['radius']
+                phase_widget.children[9].children[ball_num].children[1].value = phase['balls'][ball_num]['base_color']
+                phase_widget.children[10].children[ball_num].children[1].value = phase['balls'][ball_num]['points_per_reinforcement']
+                phase_widget.children[11].children[ball_num].children[1].value = phase['balls'][ball_num]['change_to_clicks']
+                phase_widget.children[12].children[ball_num].children[1].value = phase['balls'][ball_num]['change_over_delay']
             
             phase_boxes.children += (phase_widget,)
         
