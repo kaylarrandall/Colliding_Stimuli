@@ -44,7 +44,7 @@ def create_phase_widgets(*, phase_num):
 
     skip_phase_if_widget = HBox([
         widgets.Label(value=f'Skip Phase If:', layout=widgets.Layout(width='155px')),
-        widgets.Textarea(value='', placeholder='Optional: Code to be evaluated to see if we skip the phase', layout=widgets.Layout(width='400px', height='80px'))
+        widgets.Textarea(value='', placeholder='Optional: Code to be evaluated to see if we skip the phase.  Must input "False"(with the capital F, but no quotes) if you do not want to implement this feature.  Otherwise, you will see an error code.', layout=widgets.Layout(width='400px', height='80px'))
     ])
 
     # Background color widget (NEW: moved to top after duration)
