@@ -44,7 +44,7 @@ def create_phase_widgets(*, phase_num):
 
     skip_phase_if_widget = HBox([
         widgets.Label(value=f'Skip Phase If:', layout=widgets.Layout(width='155px')),
-        widgets.Textarea(value='', placeholder='Optional: Code to be evaluated to see if we skip the phase.  Must input "False"(with the capital F, but no quotes) if you do not want to implement this feature.  Otherwise, you will see an error code.', layout=widgets.Layout(width='400px', height='80px'))
+        widgets.Textarea(value='', placeholder='Optional: Code to be evaluated to see if we skip the phase.  Must input "False"(with the capital F, but no quotes) if you do not want to implement this feature.  Otherwise, you will see an error code.', layout=widgets.Layout(width='700px', height='100px'))
     ])
 
     # Background color widget (NEW: moved to top after duration)
@@ -66,7 +66,7 @@ def create_phase_widgets(*, phase_num):
 
     free_contingency_widget = HBox([
         widgets.Label(value=f'Optional Free Contingency:', layout=widgets.Layout(width='155px')),
-        widgets.Textarea(value='', placeholder='Optional Free Contingency Code to be executed each loop.  Must write code in other editor and paste in here if using the /tab button, as tab in here will advance to next widget.', layout=widgets.Layout(width='400px', height='80px'))
+        widgets.Textarea(value='', placeholder='Optional Free Contingency Code to be executed each loop.  Must write code in other editor and paste in here if using the /tab button, as tab in here will advance to next widget.', layout=widgets.Layout(width='700px', height='280px'))
     ])
 
     # Number of balls widget
