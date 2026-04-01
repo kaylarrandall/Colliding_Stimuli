@@ -1,0 +1,36 @@
+Tue 24 Mar 2026, 04:47PM
+('Scientist:', '', 'Participant:', '')
+################# Phase 1 ######################
+################# INIT balls ######################
+2.05, 0, Clicked: RED, x=994,  y=598, Clicked: None, x=994, y=598,  Unknown Color: x=986,  y=598,  dx=7.19793328517904,  dy=-6.941884212669618,  clicks=1,  score=1, Unknown Color: x=1152,  y=245,  dx=0.08959469241459427,  dy=-0.04441611296741585,  clicks=0,  score=0,
+2.184, 1, Clicked: RED, x=994,  y=597, Clicked: None, x=994, y=597,  Unknown Color: x=987,  y=597,  dx=7.19793328517904,  dy=-6.941884212669618,  clicks=2,  score=2, Unknown Color: x=1152,  y=245,  dx=0.08959469241459427,  dy=-0.04441611296741585,  clicks=0,  score=0,
+################# INIT balls ######################
+################# INIT balls ######################
+Tue 24 Mar 2026, 04:47PM
+('Scientist:', '', 'Participant:', '')
+################# Phase 1 ######################
+################# INIT balls ######################
+2.077, 0, Clicked: RED, x=1084,  y=562, Clicked: None, x=1084, y=562,  Unknown Color: x=1103,  y=560,  dx=-8.300238881481274,  dy=5.5772784142757725,  clicks=1,  score=1, Unknown Color: x=222,  y=266,  dx=-0.09991927093542126,  dy=0.004017374233735378,  clicks=0,  score=0,
+################# INIT balls ######################
+################# INIT balls ######################
+Tue 24 Mar 2026, 05:05PM
+('Scientist:', '', 'Participant:', '')
+################# Phase 1 ######################
+################# INIT balls ######################
+1.629, 0, Clicked: RED, x=316,  y=351, Clicked: None, x=316, y=351,  Unknown Color: x=282,  y=323,  dx=-6.263359699245424,  dy=7.795532392201849,  clicks=1,  score=1, Unknown Color: x=213,  y=466,  dx=-0.09999788323971814,  dy=-0.0006506516546496414,  clicks=0,  score=0,
+2.571, 1, Clicked: None, x=238, y=473, Clicked: (0, 51, 255), x=238,  y=473,  RED: x=276,  y=331,  dx=-6.263359699245424,  dy=7.795532392201849,  clicks=1,  score=1, Unknown Color: x=213,  y=466,  dx=-0.09999788323971814,  dy=-0.0006506516546496414,  clicks=1,  score=0,
+3.038, 1, Clicked: None, x=238, y=473, Clicked: (0, 51, 255), x=238,  y=473,  RED: x=273,  y=334,  dx=-6.263359699245424,  dy=7.795532392201849,  clicks=1,  score=1, Unknown Color: x=213,  y=466,  dx=-0.09999788323971814,  dy=-0.0006506516546496414,  clicks=2,  score=0,
+3.276, 1, Clicked: None, x=238, y=473, Clicked: (0, 51, 255), x=238,  y=473,  RED: x=272,  y=336,  dx=-6.263359699245424,  dy=7.795532392201849,  clicks=1,  score=1, Unknown Color: x=213,  y=466,  dx=-0.09999788323971814,  dy=-0.0006506516546496414,  clicks=3,  score=0,
+3.688, 1, Clicked: None, x=238, y=473, Clicked: (0, 51, 255), x=238,  y=473,  RED: x=269,  y=339,  dx=-6.263359699245424,  dy=7.795532392201849,  clicks=1,  score=1, Unknown Color: x=213,  y=466,  dx=-0.09999788323971814,  dy=-0.0006506516546496414,  clicks=4,  score=0,
+3.855, 1, Clicked: None, x=238, y=473, Clicked: (0, 51, 255), x=238,  y=473,  RED: x=268,  y=341,  dx=-6.263359699245424,  dy=7.795532392201849,  clicks=1,  score=1, Unknown Color: x=213,  y=466,  dx=-0.09999788323971814,  dy=-0.0006506516546496414,  clicks=5,  score=0,
+4.188, 1, Clicked: None, x=238, y=473, Clicked: (0, 51, 255), x=238,  y=473,  RED: x=266,  y=343,  dx=-6.263359699245424,  dy=7.795532392201849,  clicks=1,  score=1, Unknown Color: x=213,  y=466,  dx=-0.09999788323971814,  dy=-0.0006506516546496414,  clicks=6,  score=0,
+4.539, 1, Clicked: None, x=238, y=473, Clicked: (0, 51, 255), x=238,  y=473,  RED: x=264,  y=346,  dx=-6.263359699245424,  dy=7.795532392201849,  clicks=1,  score=1, Unknown Color: x=213,  y=466,  dx=-0.09999788323971814,  dy=-0.0006506516546496414,  clicks=7,  score=0,
+4.721, 1, Clicked: None, x=238, y=473, Clicked: (0, 51, 255), x=238,  y=473,  RED: x=263,  y=347,  dx=-6.263359699245424,  dy=7.795532392201849,  clicks=1,  score=1, Unknown Color: x=213,  y=466,  dx=-0.09999788323971814,  dy=-0.0006506516546496414,  clicks=8,  score=0,
+5.072, 1, Clicked: None, x=238, y=473, Clicked: (0, 51, 255), x=238,  y=473,  RED: x=260,  y=350,  dx=-6.263359699245424,  dy=7.795532392201849,  clicks=1,  score=1, Unknown Color: x=213,  y=466,  dx=-0.09999788323971814,  dy=-0.0006506516546496414,  clicks=9,  score=0,
+5.39, 1, Clicked: None, x=238, y=473, Clicked: (0, 51, 255), x=238,  y=473,  RED: x=258,  y=353,  dx=-6.263359699245424,  dy=7.795532392201849,  clicks=1,  score=1, Unknown Color: x=213,  y=466,  dx=-0.09999788323971814,  dy=-0.0006506516546496414,  clicks=10,  score=0,
+5.659, 1, Clicked: None, x=238, y=473, Clicked: (0, 51, 255), x=238,  y=473,  RED: x=257,  y=354,  dx=-2.7711225968706064,  dy=-1.054661546209827,  clicks=1,  score=1, Unknown Color: x=213,  y=466,  dx=-3.5922349856145352,  dy=8.849543286757026,  clicks=11,  score=0,
+6.222, 1, Clicked: None, x=238, y=473, Clicked: (0, 51, 255), x=238,  y=473,  RED: x=255,  y=354,  dx=-2.7711225968706064,  dy=-1.054661546209827,  clicks=1,  score=1, Unknown Color: x=211,  y=471,  dx=-3.5922349856145352,  dy=8.849543286757026,  clicks=12,  score=0,
+6.537, 1, Clicked: None, x=238, y=473, Clicked: (0, 51, 255), x=238,  y=473,  RED: x=254,  y=353,  dx=-2.7711225968706064,  dy=-1.054661546209827,  clicks=1,  score=1, Unknown Color: x=210,  y=474,  dx=-3.5922349856145352,  dy=8.849543286757026,  clicks=13,  score=0,
+6.673, 1, Clicked: None, x=238, y=473, Clicked: (0, 51, 255), x=238,  y=473,  RED: x=254,  y=353,  dx=-2.7711225968706064,  dy=-1.054661546209827,  clicks=1,  score=1, Unknown Color: x=209,  y=475,  dx=-3.5922349856145352,  dy=8.849543286757026,  clicks=14,  score=1,
+################# INIT balls ######################
+################# INIT balls ######################

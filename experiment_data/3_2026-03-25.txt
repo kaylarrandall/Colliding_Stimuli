@@ -1,0 +1,27 @@
+Wed 25 Mar 2026, 10:13AM
+('Scientist:', '', 'Participant:', '')
+################# Phase 1 ######################
+################# INIT balls ######################
+3.717, 0, Clicked: RED, x=935,  y=235, Clicked: None, x=935, y=235,  Unknown Color: x=964,  y=217,  dx=-8.576973075163439,  dy=5.141549656273041,  clicks=1,  score=1, Unknown Color: x=642,  y=290,  dx=0.06641897041551685,  dy=-0.07475640687554945,  clicks=0,  score=0,
+32.13, -1, Clicked: RED, x=767,  y=379, Clicked: None, x=767, y=379,  Unknown Color: x=735,  y=371,  dx=-4.179242804023212,  dy=7.58054805323567,  clicks=2,  score=2, Unknown Color: x=630,  y=280,  dx=-4.33131130072471,  dy=-2.5137548038381787,  clicks=0,  score=0,
+32.695, 0, Clicked: RED, x=767,  y=379, Clicked: None, x=767, y=379,  Unknown Color: x=733,  y=375,  dx=-4.179242804023212,  dy=7.58054805323567,  clicks=3,  score=3, Unknown Color: x=627,  y=279,  dx=-4.33131130072471,  dy=-2.5137548038381787,  clicks=0,  score=0,
+33.192, 1, Clicked: RED, x=767,  y=379, Clicked: None, x=767, y=379,  Unknown Color: x=731,  y=379,  dx=-4.179242804023212,  dy=7.58054805323567,  clicks=4,  score=4, Unknown Color: x=625,  y=277,  dx=-4.33131130072471,  dy=-2.5137548038381787,  clicks=0,  score=0,
+33.427, 2, Clicked: RED, x=767,  y=379, Clicked: None, x=767, y=379,  Unknown Color: x=730,  y=381,  dx=-4.179242804023212,  dy=7.58054805323567,  clicks=5,  score=5, Unknown Color: x=624,  y=277,  dx=-4.33131130072471,  dy=-2.5137548038381787,  clicks=0,  score=0,
+33.593, 3, Clicked: RED, x=767,  y=379, Clicked: None, x=767, y=379,  Unknown Color: x=729,  y=382,  dx=-4.179242804023212,  dy=7.58054805323567,  clicks=6,  score=6, Unknown Color: x=623,  y=276,  dx=-4.33131130072471,  dy=-2.5137548038381787,  clicks=0,  score=0,
+################# INIT balls ######################
+2.786, 4, Clicked: None, x=903, y=322, Clicked: None, x=903, y=322,  RED: x=835,  y=312,  dx=-0.02901882280412694,  dy=0.09569695879735513,  clicks=0,  score=0, Unknown Color: x=252,  y=219,  dx=0.08261768017916114,  dy=0.056341094432162446,  clicks=0,  score=0,
+2.998, 4, Clicked: RED, x=863,  y=329, Clicked: None, x=863, y=329,  Unknown Color: x=835,  y=312,  dx=-0.02901882280412694,  dy=0.09569695879735513,  clicks=1,  score=1, Unknown Color: x=252,  y=219,  dx=0.08261768017916114,  dy=0.056341094432162446,  clicks=0,  score=0,
+3.181, 5, Clicked: RED, x=863,  y=329, Clicked: None, x=863, y=329,  Unknown Color: x=835,  y=312,  dx=-0.02901882280412694,  dy=0.09569695879735513,  clicks=2,  score=2, Unknown Color: x=252,  y=219,  dx=0.08261768017916114,  dy=0.056341094432162446,  clicks=0,  score=0,
+3.363, 6, Clicked: RED, x=863,  y=329, Clicked: None, x=863, y=329,  Unknown Color: x=835,  y=312,  dx=-0.02901882280412694,  dy=0.09569695879735513,  clicks=3,  score=3, Unknown Color: x=252,  y=219,  dx=0.08261768017916114,  dy=0.056341094432162446,  clicks=0,  score=0,
+3.529, 7, Clicked: RED, x=863,  y=329, Clicked: None, x=863, y=329,  Unknown Color: x=835,  y=312,  dx=-0.02901882280412694,  dy=0.09569695879735513,  clicks=4,  score=4, Unknown Color: x=252,  y=219,  dx=0.08261768017916114,  dy=0.056341094432162446,  clicks=0,  score=0,
+################# INIT balls ######################
+Wed 25 Mar 2026, 10:15AM
+('Scientist:', '', 'Participant:', '')
+################# Phase 1 ######################
+################# INIT balls ######################
+Wed 25 Mar 2026, 10:17AM
+('Scientist:', '', 'Participant:', '')
+################# Phase 1 ######################
+################# INIT balls ######################
+1.099, 0, Clicked: RED, x=444,  y=409, Clicked: None, x=444, y=409,  Unknown Color: x=436,  y=409,  dx=7.800115767043093,  dy=-6.257650838831274,  clicks=1,  score=1, Unknown Color: x=738,  y=438,  dx=0.0983843703597388,  dy=0.017902951402429465,  clicks=0,  score=0,
+################# INIT balls ######################
