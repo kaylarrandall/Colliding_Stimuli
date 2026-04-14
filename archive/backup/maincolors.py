@@ -1,6 +1,6 @@
 ### Jan 22 2024 test 2
 # %%
-import logtocsv
+import src.logtocsv as logtocsv
 # logtocsv.write_data(string)
 # NOTE: Change over delay can be to or from given ball
 import pygame

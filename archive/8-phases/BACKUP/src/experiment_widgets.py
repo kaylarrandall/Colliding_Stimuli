@@ -116,12 +116,6 @@ def create_phase_widgets(*, phase_num):
                 widgets.FloatText(value=5, layout=input_box_layout)
             ]) for i in range(num_balls)
         ]
-        zero_points_message_widgets.children = [
-            HBox([
-                widgets.Label(value=f'0pts message (Ball {i + 1}):', layout=label_layout),
-                widgets.Text(value='', layout=input_box_layout)
-            ]) for i in range(num_balls)
-        ]        
 
     # Observe changes to number of balls (wrap to pass keyword arg)
     number_balls_widget.children[1].observe(lambda ch: update_ball_settings(change=ch), names='value')
@@ -133,7 +127,6 @@ def create_phase_widgets(*, phase_num):
     points_per_reinforcement = HBox([])
     change_to_clicks_widgets = HBox([])
     change_over_delay_widgets = HBox([])
-    zero_points_message_widgets = HBox([])
 
     # Initial update for ball-specific widgets
     update_ball_settings(change=None)
@@ -166,7 +159,6 @@ def create_phase_widgets(*, phase_num):
         points_per_reinforcement,
         change_to_clicks_widgets,
         change_over_delay_widgets,
-        zero_points_message_widgets,
         # yoked_widget,
         debug_widget,
         horizontal_separator()
@@ -210,8 +202,7 @@ def save_settings(*, button):
                 'base_color': phase_widget.children[9].children[ball_num].children[1].value,
                 'points_per_reinforcement': phase_widget.children[10].children[ball_num].children[1].value,
                 'change_to_clicks': phase_widget.children[11].children[ball_num].children[1].value,
-                'change_over_delay': phase_widget.children[12].children[ball_num].children[1].value,
-                'zero_points_message': phase_widget.children[13].children[ball_num].children[1].value
+                'change_over_delay': phase_widget.children[12].children[ball_num].children[1].value
             }
             phase_info['balls'].append(ball_info)
         
@@ -255,8 +246,6 @@ def load_settings(*, button):
                 phase_widget.children[10].children[ball_num].children[1].value = phase['balls'][ball_num]['points_per_reinforcement']
                 phase_widget.children[11].children[ball_num].children[1].value = phase['balls'][ball_num]['change_to_clicks']
                 phase_widget.children[12].children[ball_num].children[1].value = phase['balls'][ball_num]['change_over_delay']
-                phase_widget.children[13].children[ball_num].children[1].value = phase['balls'][ball_num]['zero_points_message'] #zero_points_message_widgets.children
-
             
             phase_boxes.children += (phase_widget,)
         
