@@ -1,0 +1,76 @@
+0.928, 0, Clicked: RED, x=412,  y=1378, Clicked: None, x=412, y=1378,  Unknown Color: x=402,  y=1396,  dx=0.05,  dy=-1.0,  clicks=1,  score=1, BLUE: x=719,  y=1030,  dx=0.18,  dy=-0.98,  clicks=0,  score=0,
+1.801, 1, Clicked: None, x=696, y=997, Clicked: BLUE, x=696,  y=997,  RED: x=405,  y=1344,  dx=0.05,  dy=-1.0,  clicks=1,  score=1, Unknown Color: x=728,  y=979,  dx=0.18,  dy=-0.98,  clicks=1,  score=0,
+################# INIT balls ######################
+0.0, Init stimuli, score: 0, Ball 1 color(255, 0, 0) dx-0.34 dy0.94 speed ~1.0 at (320.5, 896.5), Ball 2 color(0, 0, 255) dx0.93 dy0.37 speed ~1.0 at (607.0, 333.6)
+0.115, 0, Clicked: None, x=552, y=614, Clicked: None, x=552, y=614,  RED: x=318,  y=903,  dx=-0.34,  dy=0.94,  clicks=0,  score=0, BLUE: x=613,  y=336,  dx=0.93,  dy=0.37,  clicks=0,  score=0,
+0.807, 0, Clicked: RED, x=350,  y=933, Clicked: None, x=350, y=933,  Unknown Color: x=303,  y=942,  dx=-0.34,  dy=0.94,  clicks=1,  score=1, BLUE: x=652,  y=351,  dx=0.93,  dy=0.37,  clicks=0,  score=0,
+1.157, 1, Clicked: RED, x=316,  y=964, Clicked: None, x=316, y=964,  Unknown Color: x=296,  y=962,  dx=-0.34,  dy=0.94,  clicks=2,  score=2, BLUE: x=672,  y=359,  dx=0.93,  dy=0.37,  clicks=0,  score=0,
+1.883, 2, Clicked: None, x=662, y=390, Clicked: BLUE, x=662,  y=390,  RED: x=281,  y=1003,  dx=-0.34,  dy=0.94,  clicks=2,  score=2, Unknown Color: x=713,  y=375,  dx=0.93,  dy=0.37,  clicks=1,  score=0,
+2.132, 2, Clicked: None, x=702, y=398, Clicked: BLUE, x=702,  y=398,  RED: x=276,  y=1017,  dx=-0.34,  dy=0.94,  clicks=2,  score=2, Unknown Color: x=727,  y=381,  dx=0.93,  dy=0.37,  clicks=2,  score=0,
+2.378, 2, Clicked: None, x=702, y=398, Clicked: BLUE, x=702,  y=398,  RED: x=271,  y=1031,  dx=-0.34,  dy=0.94,  clicks=2,  score=2, Unknown Color: x=739,  y=386,  dx=-0.93,  dy=0.37,  clicks=3,  score=0,
+2.508, 2, Clicked: None, x=704, y=401, Clicked: BLUE, x=704,  y=401,  RED: x=268,  y=1039,  dx=-0.34,  dy=0.94,  clicks=2,  score=2, Unknown Color: x=731,  y=389,  dx=-0.93,  dy=0.37,  clicks=4,  score=0,
+2.644, 2, Clicked: None, x=704, y=401, Clicked: BLUE, x=704,  y=401,  RED: x=266,  y=1046,  dx=-0.34,  dy=0.94,  clicks=2,  score=2, Unknown Color: x=724,  y=392,  dx=-0.93,  dy=0.37,  clicks=5,  score=0,
+2.778, 2, Clicked: None, x=704, y=401, Clicked: BLUE, x=704,  y=401,  RED: x=263,  y=1054,  dx=-0.34,  dy=0.94,  clicks=2,  score=2, Unknown Color: x=716,  y=395,  dx=-0.93,  dy=0.37,  clicks=6,  score=0,
+2.91, 2, Clicked: None, x=704, y=401, Clicked: BLUE, x=704,  y=401,  RED: x=260,  y=1061,  dx=-0.34,  dy=0.94,  clicks=2,  score=2, Unknown Color: x=709,  y=398,  dx=-0.93,  dy=0.37,  clicks=7,  score=0,
+3.044, 2, Clicked: None, x=704, y=401, Clicked: BLUE, x=704,  y=401,  RED: x=257,  y=1069,  dx=-0.34,  dy=0.94,  clicks=2,  score=2, Unknown Color: x=701,  y=401,  dx=-0.93,  dy=0.37,  clicks=8,  score=0,
+4.221, 2, Clicked: RED, x=215,  y=1157, Clicked: None, x=215, y=1157,  Unknown Color: x=233,  y=1136,  dx=-0.34,  dy=0.94,  clicks=3,  score=3, BLUE: x=635,  y=427,  dx=-0.93,  dy=0.37,  clicks=8,  score=0,
+4.373, 3, Clicked: RED, x=215,  y=1157, Clicked: None, x=215, y=1157,  Unknown Color: x=230,  y=1144,  dx=-0.34,  dy=0.94,  clicks=4,  score=4, BLUE: x=627,  y=431,  dx=-0.93,  dy=0.37,  clicks=8,  score=0,
+4.522, 4, Clicked: RED, x=215,  y=1157, Clicked: None, x=215, y=1157,  Unknown Color: x=227,  y=1153,  dx=-0.34,  dy=0.94,  clicks=5,  score=5, BLUE: x=619,  y=434,  dx=-0.93,  dy=0.37,  clicks=8,  score=0,
+4.606, 5, Clicked: RED, x=215,  y=1157, Clicked: None, x=215, y=1157,  Unknown Color: x=225,  y=1157,  dx=-0.34,  dy=0.94,  clicks=6,  score=6, BLUE: x=614,  y=436,  dx=-0.93,  dy=0.37,  clicks=8,  score=0,
+4.74, 6, Clicked: RED, x=215,  y=1157, Clicked: None, x=215, y=1157,  Unknown Color: x=223,  y=1165,  dx=-0.34,  dy=0.94,  clicks=7,  score=7, BLUE: x=607,  y=439,  dx=-0.93,  dy=0.37,  clicks=8,  score=0,
+################# INIT balls ######################
+0.0, Init stimuli, score: 7, Ball 1 color(255, 0, 0) dx-0.40 dy-0.92 speed ~1.004987562112089 at (523.1, 948.0), Ball 2 color(0, 0, 255) dx0.74 dy0.67 speed ~1.0 at (694.1, 1209.3)
+################# INIT balls ######################
+0.0, Init stimuli, score: 7, Ball 1 color(255, 0, 0) dx1.00 dy-0.09 speed ~1.004987562112089 at (265.0, 319.8), Ball 2 color(0, 0, 255) dx-0.98 dy0.20 speed ~1.0 at (323.9, 1320.0)
+################# INIT balls ######################
+0.0, Init stimuli, score: 7, Ball 1 color(255, 0, 0) dx-0.71 dy0.71 speed ~1.004987562112089 at (307.6, 253.9), Ball 2 color(0, 0, 255) dx0.64 dy-0.77 speed ~1.0 at (588.2, 303.8)
+0.82, 7, Clicked: RED, x=286,  y=302, Clicked: None, x=286, y=302,  Unknown Color: x=272,  y=288,  dx=-0.71,  dy=0.71,  clicks=1,  score=1, BLUE: x=619,  y=266,  dx=0.64,  dy=-0.77,  clicks=0,  score=0,
+1.183, 8, Clicked: RED, x=255,  y=340, Clicked: None, x=255, y=340,  Unknown Color: x=257,  y=304,  dx=-0.71,  dy=0.71,  clicks=2,  score=2, BLUE: x=633,  y=249,  dx=0.64,  dy=-0.77,  clicks=0,  score=0,
+1.333, 9, Clicked: RED, x=255,  y=340, Clicked: None, x=255, y=340,  Unknown Color: x=250,  y=310,  dx=-0.71,  dy=0.71,  clicks=3,  score=3, BLUE: x=639,  y=242,  dx=0.64,  dy=-0.77,  clicks=0,  score=0,
+1.465, 10, Clicked: RED, x=255,  y=340, Clicked: None, x=255, y=340,  Unknown Color: x=245,  y=316,  dx=-0.71,  dy=0.71,  clicks=4,  score=4, BLUE: x=644,  y=236,  dx=0.64,  dy=-0.77,  clicks=0,  score=0,
+1.614, 11, Clicked: RED, x=255,  y=340, Clicked: None, x=255, y=340,  Unknown Color: x=238,  y=322,  dx=-0.71,  dy=0.71,  clicks=5,  score=5, BLUE: x=650,  y=229,  dx=0.64,  dy=-0.77,  clicks=0,  score=0,
+2.029, 12, Clicked: None, x=693, y=195, Clicked: BLUE, x=693,  y=195,  RED: x=221,  y=340,  dx=-0.71,  dy=0.71,  clicks=5,  score=5, Unknown Color: x=666,  y=209,  dx=0.64,  dy=-0.77,  clicks=1,  score=0,
+2.163, 12, Clicked: None, x=693, y=195, Clicked: BLUE, x=693,  y=195,  RED: x=215,  y=346,  dx=-0.71,  dy=0.71,  clicks=5,  score=5, Unknown Color: x=671,  y=203,  dx=0.64,  dy=-0.77,  clicks=2,  score=0,
+2.312, 12, Clicked: None, x=693, y=195, Clicked: BLUE, x=693,  y=195,  RED: x=208,  y=352,  dx=-0.71,  dy=0.71,  clicks=5,  score=5, Unknown Color: x=677,  y=196,  dx=0.64,  dy=-0.77,  clicks=3,  score=0,
+################# INIT balls ######################
+0.0, Init stimuli, score: 11, Ball 1 color(255, 0, 0) dx-0.98 dy-0.18 speed ~0.99498743710662 at (371.5, 642.4), Ball 2 color(0, 0, 255) dx0.16 dy0.99 speed ~1.004987562112089 at (374.7, 401.6)
+0.181, 11, Clicked: None, x=411, y=471, Clicked: None, x=411, y=471,  RED: x=360,  y=640,  dx=-0.98,  dy=-0.18,  clicks=0,  score=0, BLUE: x=376,  y=412,  dx=0.16,  dy=0.99,  clicks=0,  score=0,
+0.881, 11, Clicked: None, x=411, y=471, Clicked: BLUE, x=411,  y=471,  RED: x=319,  y=632,  dx=-0.98,  dy=-0.18,  clicks=0,  score=0, Unknown Color: x=383,  y=454,  dx=0.16,  dy=0.99,  clicks=1,  score=0,
+1.799, 11, Clicked: RED, x=239,  y=612, Clicked: None, x=239, y=612,  Unknown Color: x=265,  y=622,  dx=-0.98,  dy=-0.18,  clicks=1,  score=1, BLUE: x=391,  y=508,  dx=0.16,  dy=0.99,  clicks=1,  score=0,
+2.43, 12, Clicked: None, x=405, y=561, Clicked: BLUE, x=405,  y=561,  RED: x=228,  y=616,  dx=-0.98,  dy=-0.18,  clicks=1,  score=1, Unknown Color: x=398,  y=546,  dx=0.16,  dy=0.99,  clicks=2,  score=0,
+2.961, 12, Clicked: None, x=419, y=617, Clicked: BLUE, x=419,  y=617,  RED: x=197,  y=610,  dx=-0.98,  dy=-0.18,  clicks=1,  score=1, Unknown Color: x=403,  y=577,  dx=0.16,  dy=0.99,  clicks=3,  score=0,
+3.096, 12, Clicked: None, x=419, y=617, Clicked: BLUE, x=419,  y=617,  RED: x=189,  y=608,  dx=-0.98,  dy=-0.18,  clicks=1,  score=1, Unknown Color: x=404,  y=585,  dx=0.16,  dy=0.99,  clicks=4,  score=0,
+3.23, 12, Clicked: None, x=419, y=617, Clicked: BLUE, x=419,  y=617,  RED: x=181,  y=607,  dx=-0.98,  dy=-0.18,  clicks=1,  score=1, Unknown Color: x=405,  y=593,  dx=0.16,  dy=0.99,  clicks=5,  score=0,
+3.378, 12, Clicked: None, x=419, y=617, Clicked: BLUE, x=419,  y=617,  RED: x=172,  y=605,  dx=-0.98,  dy=-0.18,  clicks=1,  score=1, Unknown Color: x=407,  y=602,  dx=0.16,  dy=0.99,  clicks=6,  score=0,
+4.261, 12, Clicked: RED, x=167,  y=587, Clicked: None, x=167, y=587,  Unknown Color: x=199,  y=596,  dx=0.98,  dy=-0.18,  clicks=2,  score=2, BLUE: x=415,  y=655,  dx=0.16,  dy=0.99,  clicks=6,  score=0,
+4.514, 13, Clicked: RED, x=198,  y=592, Clicked: None, x=198, y=592,  Unknown Color: x=213,  y=593,  dx=0.98,  dy=-0.18,  clicks=3,  score=3, BLUE: x=418,  y=669,  dx=0.16,  dy=0.99,  clicks=6,  score=0,
+################# INIT balls ######################
+0.0, Init stimuli, score: 14, Ball 1 color(255, 0, 0) dx0.76 dy0.65 speed ~1.0 at (652.8, 269.9), Ball 2 color(0, 0, 255) dx-1.00 dy0.04 speed ~1.0 at (378.3, 790.0)
+1.118, 14, Clicked: RED, x=704,  y=344, Clicked: None, x=704, y=344,  Unknown Color: x=703,  y=313,  dx=0.76,  dy=0.65,  clicks=1,  score=1, BLUE: x=311,  y=792,  dx=-1.0,  dy=0.04,  clicks=0,  score=0,
+1.888, 15, Clicked: RED, x=727,  y=350, Clicked: None, x=727, y=350,  Unknown Color: x=738,  y=343,  dx=0.76,  dy=0.65,  clicks=2,  score=2, BLUE: x=265,  y=794,  dx=-1.0,  dy=0.04,  clicks=0,  score=0,
+2.591, 16, Clicked: None, x=246, y=761, Clicked: BLUE, x=246,  y=761,  RED: x=709,  y=370,  dx=-0.76,  dy=0.65,  clicks=2,  score=2, Unknown Color: x=223,  y=796,  dx=-1.0,  dy=0.04,  clicks=1,  score=0,
+2.992, 16, Clicked: None, x=233, y=777, Clicked: BLUE, x=233,  y=777,  RED: x=691,  y=386,  dx=-0.76,  dy=0.65,  clicks=2,  score=2, Unknown Color: x=199,  y=797,  dx=-1.0,  dy=0.04,  clicks=2,  score=0,
+3.277, 16, Clicked: None, x=208, y=790, Clicked: BLUE, x=208,  y=790,  RED: x=678,  y=397,  dx=-0.76,  dy=0.65,  clicks=2,  score=2, Unknown Color: x=182,  y=797,  dx=-1.0,  dy=0.04,  clicks=3,  score=0,
+3.428, 16, Clicked: None, x=206, y=791, Clicked: BLUE, x=206,  y=791,  RED: x=671,  y=403,  dx=-0.76,  dy=0.65,  clicks=2,  score=2, Unknown Color: x=173,  y=798,  dx=-1.0,  dy=0.04,  clicks=4,  score=0,
+3.562, 16, Clicked: None, x=202, y=793, Clicked: BLUE, x=202,  y=793,  RED: x=665,  y=408,  dx=-0.76,  dy=0.65,  clicks=2,  score=2, Unknown Color: x=165,  y=798,  dx=-1.0,  dy=0.04,  clicks=5,  score=0,
+3.696, 16, Clicked: None, x=202, y=793, Clicked: BLUE, x=202,  y=793,  RED: x=659,  y=413,  dx=-0.76,  dy=0.65,  clicks=2,  score=2, Unknown Color: x=162,  y=798,  dx=1.0,  dy=0.04,  clicks=6,  score=0,
+4.061, 16, Clicked: None, x=201, y=795, Clicked: BLUE, x=201,  y=795,  RED: x=642,  y=427,  dx=-0.76,  dy=0.65,  clicks=2,  score=2, Unknown Color: x=184,  y=799,  dx=1.0,  dy=0.04,  clicks=7,  score=0,
+4.176, 16, Clicked: None, x=201, y=795, Clicked: BLUE, x=201,  y=795,  RED: x=637,  y=432,  dx=-0.76,  dy=0.65,  clicks=2,  score=2, Unknown Color: x=191,  y=800,  dx=1.0,  dy=0.04,  clicks=8,  score=0,
+4.974, 16, Clicked: RED, x=604,  y=456, Clicked: None, x=604, y=456,  Unknown Color: x=600,  y=463,  dx=-0.76,  dy=0.65,  clicks=3,  score=3, BLUE: x=239,  y=801,  dx=1.0,  dy=0.04,  clicks=8,  score=0,
+################# INIT balls ######################
+0.0, Init stimuli, score: 17, Ball 1 color(255, 0, 0) dx0.14 dy0.99 speed ~1.0 at (614.6, 746.7), Ball 2 color(0, 0, 255) dx-0.82 dy0.57 speed ~1.0 at (202.0, 498.8)
+0.067, 17, Clicked: None, x=600, y=514, Clicked: None, x=600, y=514,  RED: x=615,  y=750,  dx=0.14,  dy=0.99,  clicks=0,  score=0, BLUE: x=198,  y=501,  dx=-0.82,  dy=0.57,  clicks=0,  score=0,
+0.198, 17, Clicked: None, x=600, y=514, Clicked: None, x=600, y=514,  RED: x=616,  y=758,  dx=0.14,  dy=0.99,  clicks=0,  score=0, BLUE: x=192,  y=505,  dx=-0.82,  dy=0.57,  clicks=0,  score=0,
+0.748, 17, Clicked: RED, x=590,  y=810, Clicked: None, x=590, y=810,  Unknown Color: x=620,  y=791,  dx=0.14,  dy=0.99,  clicks=1,  score=1, BLUE: x=165,  y=524,  dx=-0.82,  dy=0.57,  clicks=0,  score=0,
+1.381, 18, Clicked: None, x=219, y=564, Clicked: BLUE, x=219,  y=564,  RED: x=626,  y=828,  dx=0.14,  dy=0.99,  clicks=1,  score=1, Unknown Color: x=185,  y=546,  dx=0.82,  dy=0.57,  clicks=1,  score=0,
+2.086, 18, Clicked: RED, x=626,  y=870, Clicked: None, x=626, y=870,  Unknown Color: x=632,  y=870,  dx=0.14,  dy=0.99,  clicks=2,  score=2, BLUE: x=219,  y=570,  dx=0.82,  dy=0.57,  clicks=1,  score=0,
+2.303, 19, Clicked: RED, x=629,  y=875, Clicked: None, x=629, y=875,  Unknown Color: x=633,  y=883,  dx=0.14,  dy=0.99,  clicks=3,  score=3, BLUE: x=230,  y=577,  dx=0.82,  dy=0.57,  clicks=1,  score=0,
+2.503, 20, Clicked: RED, x=632,  y=886, Clicked: None, x=632, y=886,  Unknown Color: x=635,  y=895,  dx=0.14,  dy=0.99,  clicks=4,  score=4, BLUE: x=240,  y=584,  dx=0.82,  dy=0.57,  clicks=1,  score=0,
+2.685, 21, Clicked: RED, x=634,  y=910, Clicked: None, x=634, y=910,  Unknown Color: x=637,  y=906,  dx=0.14,  dy=0.99,  clicks=5,  score=5, BLUE: x=249,  y=590,  dx=0.82,  dy=0.57,  clicks=1,  score=0,
+3.348, 22, Clicked: None, x=307, y=630, Clicked: BLUE, x=307,  y=630,  RED: x=642,  y=945,  dx=0.14,  dy=0.99,  clicks=5,  score=5, Unknown Color: x=282,  y=613,  dx=0.82,  dy=0.57,  clicks=2,  score=0,
+3.477, 22, Clicked: None, x=307, y=629, Clicked: BLUE, x=307,  y=629,  RED: x=643,  y=953,  dx=0.14,  dy=0.99,  clicks=5,  score=5, Unknown Color: x=288,  y=617,  dx=0.82,  dy=0.57,  clicks=3,  score=0,
+3.629, 22, Clicked: None, x=306, y=629, Clicked: BLUE, x=306,  y=629,  RED: x=645,  y=962,  dx=0.14,  dy=0.99,  clicks=5,  score=5, Unknown Color: x=296,  y=623,  dx=0.82,  dy=0.57,  clicks=4,  score=0,
+4.294, 22, Clicked: RED, x=661,  y=992, Clicked: None, x=661, y=992,  Unknown Color: x=650,  y=1002,  dx=0.14,  dy=0.99,  clicks=6,  score=6, BLUE: x=328,  y=645,  dx=0.82,  dy=0.57,  clicks=4,  score=0,
+4.445, 23, Clicked: RED, x=662,  y=1002, Clicked: None, x=662, y=1002,  Unknown Color: x=651,  y=1011,  dx=0.14,  dy=0.99,  clicks=7,  score=7, BLUE: x=336,  y=651,  dx=0.82,  dy=0.57,  clicks=4,  score=0,
+4.578, 24, Clicked: RED, x=667,  y=1009, Clicked: None, x=667, y=1009,  Unknown Color: x=653,  y=1018,  dx=0.14,  dy=0.99,  clicks=8,  score=8, BLUE: x=342,  y=655,  dx=0.82,  dy=0.57,  clicks=4,  score=0,
+4.694, 25, Clicked: RED, x=667,  y=1009, Clicked: None, x=667, y=1009,  Unknown Color: x=654,  y=1025,  dx=0.14,  dy=0.99,  clicks=9,  score=9, BLUE: x=348,  y=659,  dx=0.82,  dy=0.57,  clicks=4,  score=0,
